@@ -1,0 +1,360 @@
+/* This css file is to over write bootstarp css
+--------------------------------------------------------- /
+* Theme Name: Basix Admin Template
+* Theme URI: http://demos.jeweltheme.com/basix/ 
+* Author: jewel_theme
+* Author URI: http://themeforest.net/user/jewel_theme/portfolio 
+* Description:  
+* Version: 1.0.0
+* License: GNU General Public License v2 or later
+* License URI: http://www.gnu.org/licenses/gpl-2.0.html
+* Tags: html, themplate, basix 
+--------------------------------------------------------- */
+
+
+.transition {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+
+body {
+    background: #f1f2f7;
+    font-family: 'Open Sans' sans-serif;
+    font-size: 16px;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+p:focus {
+    border: none;
+    outline: 0;
+}
+a {
+    text-decoration: none;
+
+    -webkit-transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+    -ms-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+}
+a:hover,
+a:focus {
+    text-decoration: none;
+} 
+li {
+    display: inline-block;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+/* Global Styles */
+
+/* Main Styles */
+aside.left-panel {
+    background: #2c2d33;
+    width: 280px;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    float: left;
+
+    -webkit-transition: all .35s ease;
+    -moz-transition: all .35s ease;
+    -ms-transition: all .35s ease;
+    -o-transition: all .35s ease;
+    transition: all .35s ease;
+}
+.open aside.left-panel {
+    margin-left: -220px;
+}
+.navbar-default {
+    background: #2c2d33;
+    border-radius: 0;
+    border: none;
+    margin: 0;
+    margin-bottom: 100px;
+}
+.navbar-header {
+    float: none;
+    text-align: center;
+    width: 100%;
+}
+.navbar-brand {
+    border-bottom: 1px solid #313238;
+    color: #f1f2f7 !important;
+    font-family: 'Open Sans';
+    font-size: 22px;
+    float: none;
+    line-height: 50px;
+    margin-left: 0;
+    text-align: left;
+    text-transform: capitalize;
+    display: block;
+    min-height: 80px;
+    padding-left: 45px;
+}
+.navbar-brand span {
+    font-weight: 600;
+}
+.menu-title {
+    border-top: 1px solid #313238;
+    color: #54565c;
+    clear: both;
+    display: block;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 60px;
+    padding-left: 85px;
+    text-transform: uppercase;
+}
+.nav.navbar-nav {
+    position: relative;
+}
+.nav.navbar-nav:before {
+    content: '';
+    width: 1px;
+    height: 100vh;
+    background: #313238;
+    left: 60px;
+    position: absolute;
+    top: 60px;
+}
+.navbar-nav li {
+    width: 100%;
+}
+.navbar-nav li>a {
+    color: #9496a1;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    padding-left: 85px;
+    position: relative;
+    width: 100%;
+}
+.navbar-nav li>a:hover,
+.navbar-nav li>a:hover .menu-icon,
+.navbar-default .navbar-nav>li.active .menu-icon,
+.navbar-nav li:hover .toggle_nav_button:before,
+.toggle_nav_button.nav-open:before {
+    color: #fff !important;
+}
+.open .navbar-nav li>a {
+    font-size: 0;
+}
+.navbar-nav .sub-menu.children li>a:before {
+    content: '';
+    display: none;
+}
+.menu-icon {
+    color: #8b939b;
+    position: absolute;
+    top: 17px;
+    left:0;
+    width: 60px;
+    text-align: center;
+}
+.navbar-default .navbar-nav>.active>a, 
+.navbar-default .navbar-nav>.active>a:focus, 
+.navbar-default .navbar-nav>.active>a:hover {
+    background: #28282e;
+    color: #d7d9e3;
+}
+.navbar-default .navbar-nav>li.active>a:before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 7px solid transparent;
+    border-right: 9px solid #f1f2f7;
+    border-bottom: 7px solid transparent;
+    position: absolute;
+    top: 19px;
+    right: 0;
+}
+.sub-menu>li>.sub-menu {
+    display: none;
+}
+.navbar-nav>li>.sub-menu{
+    display: none;
+}
+.toggle_nav_button {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    top: 0;
+    right: 20px;
+    position: absolute;
+}
+.toggle_nav_button:before { 
+    color: #54565c;    
+    font-family: 'Fontawesome';
+    font-size: 16px;
+    position: absolute;
+    top: 13px;
+    right: 10px;
+    text-align: right;
+}
+.toggle_nav_button:before {
+    content: "\f105";
+}
+.toggle_nav_button.nav-open:before {
+    content: "\f107";
+}
+.sub-menu .toggle_nav_button{
+    right: 40px;
+}
+.navbar-nav .sub-menu.children a {
+    line-height: 30px;
+    padding-left: 60px;
+}
+.navbar-nav li span.count {
+    background: #a9d86e;
+    border-radius: 50%;
+    color: #fff;
+    font-family: 'Open Sans';
+    font-size: 9px;
+    font-weight: 700;
+    float: right;
+    height: 20px;
+    width: 20px;
+    line-height: 20px;
+    margin-right: 15px;
+    text-align: center;
+}
+
+/* Right panel */
+
+.right-panel {
+    padding-left: 280px;
+
+    -webkit-transition: all .35s ease;
+    -moz-transition: all .35s ease;
+    -ms-transition: all .35s ease;
+    -o-transition: all .35s ease;
+    transition: all .35s ease;
+}
+.open .right-panel {
+    margin-left: -220px;
+}
+header.fixed-top {
+    background: #fff;
+    padding: 20px;
+}
+.menutoggle {
+    color: #8c8c8c;
+    cursor: pointer;
+    font-size: 18px;
+}
+.open .menutoggle i:before {
+    content: "\f061";
+}
+.navbar-form {
+    display: inline-block;
+    position: relative;
+}
+.navbar-form {
+    margin: 0;
+}
+.navbar-form input[type="text"] {
+    border: 1px solid #f1f2f7;
+    border-radius: 0;
+    box-shadow: none;
+    color: #d3d3d3;
+    font-size: 13px;
+    height: inherit;
+    padding: 10px 15px;
+    width: 350px;
+}
+.navbar-form input[type="text"].active,
+.navbar-form input[type="text"]:focus {
+    border-color: #f1f2f7;
+    outline: 0;
+}
+.submit-btn {
+    background: transparent;
+    border: none;
+    color: #bfbfc1;
+    right: 20px;
+    top: 4px;
+    position: absolute;
+}
+.submit-btn:active,
+.submit-btn:focus {
+    border: none;
+    outline: 0;
+}
+.user-area {
+    display: inline-block;
+    padding-right: 7px;
+    position: relative;
+}
+.user-area:before {
+    content: "\f0d7";
+}
+.user-area.open:before {
+    content: "\f0d8";
+}
+.user-area:before {
+    font-family: 'Fontawesome';
+    background: #f1f2f7;
+    border-radius: 50%;
+    color: #8c8c8c;
+    font-size: 11px;
+    height: 20px;
+    width: 20px;
+    line-height: 23px;
+    text-align: center;
+    right: 0;
+    top: 50%;
+    margin-top: -11px;
+    position: absolute;
+}
+.user-area .user-menu {
+    left: 0;
+    bottom: 0;
+    height: 0;
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+
+    -webkit-transition: all .25s ease;
+       -moz-transition: all .25s ease;
+        -ms-transition: all .25s ease;
+         -o-transition: all .25s ease;
+            transition: all .25s ease;
+}
+.user-area:hover .user-menu {
+    height: auto;
+    opacity: 1;
+}
+.user-area .user-menu li {
+    display: block;
+}
+.user-avatar {
+    width: 40px;
+}
+.user-info {
+    padding: 0 20px 0 0;
+}
+.user-info .name {
+    color: #8c8c8c;
+    font-size: 14px;
+    position: relative;
+    text-transform: uppercase;
+}
+#menuToggle2 {
+    padding-left: 25px;
+}
